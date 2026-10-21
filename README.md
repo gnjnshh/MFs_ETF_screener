@@ -1,52 +1,45 @@
-# 🇮🇳 Indian Mutual Funds & Index Funds Screener Dashboard
+# 🇮🇳 Indian Mutual Funds & ETFs Screener
 
-An interactive, high-performance Python dashboard built with **Streamlit** and **Plotly** to explore, filter, screen, and compare Indian Mutual Funds, Index Funds, ETFs, and Hybrid schemes.
+An interactive, high-performance web dashboard to explore, screen, filter, and compare 165+ Indian Mutual Funds, Index Funds, and ETFs across all major AMCs.
+
+### 🌐 Live Web App (Always Online 24/7):
+👉 **[https://gnjnshh.github.io/MFs_ETF_screener/](https://gnjnshh.github.io/MFs_ETF_screener/)**
+
+---
 
 ## 🚀 Key Features
 
 1. **Multi-Parameter Filtering:**
-   - Search by scheme name, benchmark, or AMC keyword.
-   - Filter by **Category** (Large Cap, Mid Cap, Small Cap, Flexi Cap, Multi Cap, Large & Mid Cap, Value/Contra, ELSS, Focused, Sectoral/Thematic, Index Funds, ETFs, Hybrid, Arbitrage, Liquid).
-   - Filter by **Fund Type** (Active Equity, Index Fund, ETF, Hybrid, Debt).
-   - Filter by **Fund House (AMC)** (SBI, HDFC, ICICI Prudential, Nippon India, Kotak, Parag Parikh, Mirae Asset, Axis, UTI, Bandhan, Tata, Motilal Oswal, DSP, Canara Robeco, Quant, etc.).
-   - Dynamic **AUM Range Slider** (₹ Cr).
-   - Minimum return thresholds for **1M, 3M, 6M, 1Y, 3Y, and 5Y** returns.
-   - Filter by **SEBI Risk Rating**.
+   - Instant search across 165+ schemes and 29 AMCs (SBI, Parag Parikh, HDFC, ICICI, Nippon, Mirae, Quant, etc.).
+   - Category filtering: Large Cap, Mid Cap, Small Cap, Flexi Cap, Index Funds, EV & New Age, Gold & Silver ETFs, Sectoral, ELSS.
+   - Fund Type filtering: Active Equity, Index Fund, ETF, Hybrid, Debt/Liquid.
+   - Dynamic sorting by AUM (₹ Cr), 1M, 3M, 6M, 1Y, 3Y, and 5Y returns.
 
-2. **Interactive Visual Analytics (Plotly):**
-   - **Top 10 Performers:** Dynamic bar charts switchable across 1M, 3M, 6M, 1Y, 3Y, and 5Y return horizons.
-   - **Category Comparison:** Average returns across categories.
-   - **Risk-Return Scatter Plot:** 1-Year vs. 3-Year CAGR with bubble size representing AUM.
-   - **AUM Distribution Sunburst/Treemap:** Interactive hierarchy by Category and Fund House.
+2. **Head-to-Head Comparison:**
+   - Select 2 to 4 funds and compare them side-by-side with metric deltas.
 
-3. **Side-by-Side Scheme Comparison:**
-   - Compare 2 to 4 schemes across all metrics (AUM, 1M, 3M, 6M, 1Y, 3Y, 5Y returns, Benchmark, Expense Ratio, Risk) in a clean comparison table and bar chart.
+3. **Mobile-First & Ultra-Responsive:**
+   - Touch-friendly horizontal category pills, expandable scheme details (Expense Ratio, Benchmark, Risk Rating).
+   - Zero installation required — works directly in any mobile or desktop browser.
 
-4. **Live AMFI NAV Inspector & Tracker:**
-   - Query live NAV records directly from official AMFI data (`api.mfapi.in`).
-   - Interactive historical NAV charts with timeframe selectors (1M, 6M, 1Y, 3Y, 5Y, Max).
-
-5. **One-Click CSV Export:**
-   - Download the filtered dataset with one click.
+4. **Python Streamlit Version:**
+   - Includes full Python source (`app.py`) with Plotly visualizations and live AMFI API NAV tracking.
 
 ---
 
-## 🏃‍♂️ How to Run the Dashboard
+## 🏃‍♂️ Running Locally (Optional)
 
-In PowerShell or Command Prompt, run:
+### Run the Web Dashboard:
+Simply open `index.html` in any browser, or view live on GitHub Pages.
 
+### Run the Python Streamlit App:
 ```bash
-cd "C:\Users\gnjns\.gemini\antigravity\scratch\mutual_fund_dashboard"
+pip install -r requirements.txt
 streamlit run app.py
 ```
-
-Or simply double-click **`run_dashboard.bat`** (Local access) or **`share_dashboard.bat`** (Public shareable link).
+Or double-click `run_dashboard.bat`.
 
 ---
 
-## 🌐 Public Sharing & Mobile Access
-
-You can share the dashboard or access it from your phone without being on the same network using Cloudflare Tunnel:
-
-- Run `share_dashboard.bat` to launch the app and obtain a public HTTPS `*.trycloudflare.com` URL.
-
+## 📊 Dataset
+All data is compiled in [`mutual_funds_data.csv`](mutual_funds_data.csv) covering 165+ schemes with AUM and multi-period annualized returns.
