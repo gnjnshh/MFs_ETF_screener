@@ -1,0 +1,19 @@
+# Virtual environment & caches
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+venv/
+env/
+
+# Logs & Binaries
+*.log
+cloudflared.exe
+stderr.log
+stdout.log
+tunnel.log
+localtunnel.log
+start_services.py
+share_dashboard.bat
+run_dashboard.bat
+generate_html_artifact.py
